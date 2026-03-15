@@ -2,7 +2,7 @@ name: Sync VIT-AP Events
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '30 0-17 * * *'
   workflow_dispatch:
 
 jobs:
