@@ -111,7 +111,7 @@ export default function EventsPage() {
       `}</style>
       
       <div
-        className="min-h-screen pb-24 transition-colors duration-300"
+        className="min-h-screen flex flex-col transition-colors duration-300 pb-8"
         style={{
           background: dark ? "#13151c" : "#f8f9fb",
           fontFamily: "'Outfit', sans-serif",
@@ -146,7 +146,7 @@ export default function EventsPage() {
         </header>
 
         <main
-          className="max-w-6xl mx-auto px-2 sm:px-4 md:px-8"
+          className="w-full max-w-6xl mx-auto px-2 sm:px-4 md:px-8 flex-1"
           style={{
             opacity: mounted ? 1 : 0,
             transition: "opacity 0.7s cubic-bezier(0.22,1,0.36,1) 0.18s",
@@ -346,7 +346,7 @@ export default function EventsPage() {
         </main>
 
         <footer
-          className="max-w-6xl mx-auto px-4 md:px-8 mt-12"
+          className="w-full max-w-6xl mx-auto px-4 md:px-8 mt-12"
           style={{
             opacity: mounted ? 1 : 0,
             transition: "opacity 0.7s cubic-bezier(0.22,1,0.36,1) 0.3s",
