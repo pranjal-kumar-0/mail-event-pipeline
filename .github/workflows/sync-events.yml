@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Ping Vercel Cron Endpoint
         run: |
-          curl -L -X GET "${{ secrets.PRODUCTION_URL }}/api/cron" \
+          curl -v -L -X GET "${{ secrets.PRODUCTION_URL }}/api/cron" \
           -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"
