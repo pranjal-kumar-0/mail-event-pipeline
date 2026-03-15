@@ -1,0 +1,15 @@
+name: Sync VIT-AP Events
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping-cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Vercel Cron Endpoint
+        run: |
+          curl -X GET "${{ secrets.PRODUCTION_URL }}/api/cron" \
+          -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"
