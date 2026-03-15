@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VIT-AP Events | Campus Hackathons & Workshops",
+  title: "VIT-AP Events",
   description: "An automated, real-time board of upcoming hackathons, workshops, and coding challenges at VIT-AP University. Stay updated on technical and cultural events.",
   keywords: ["VIT-AP", "events", "hackathon", "workshop", "college", "university", "coding", "cultural", "OD", "vitap events"],
   authors: [{ name: "VIT-AP Students" }],
