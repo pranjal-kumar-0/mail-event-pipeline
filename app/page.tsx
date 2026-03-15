@@ -34,7 +34,7 @@ const parseDate = (dateString?: string): number => {
     return parsed;
   }
 
-  let cleaned = raw.replace(/(st|nd|rd|th)/g, "");
+  const cleaned = raw.replace(/(st|nd|rd|th)/g, "");
 
   if (cleaned.includes("-") || cleaned.includes("–") || cleaned.includes(" to ")) {
     const segments = cleaned.split(/[-–]| to /).map(s => s.trim());
