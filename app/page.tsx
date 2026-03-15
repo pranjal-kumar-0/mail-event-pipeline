@@ -384,7 +384,7 @@ export default function EventsPage() {
                   onClick={() => handleSort("od")}
                 >
                   <div className="flex items-center gap-1.5 md:gap-2">
-                    Duty Leave
+                    ODs
                     {sortBy === "od" ? (
                       <span className="text-white">{sortOrder === "asc" ? "↑" : "↓"}</span>
                     ) : (
