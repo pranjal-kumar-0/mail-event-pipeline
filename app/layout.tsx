@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     description: "Discover the latest hackathons, workshops, and campus activities at VIT-AP.",
     url: "https://events.pranjalk.tech",
     siteName: "VIT-AP Events",
+    images: [
+      {
+        url: "https://events.pranjalk.tech/favicon.ico",
+        width: 256, 
+        height: 256,
+        alt: "VIT-AP Events Favicon",
+      }
+    ],
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "VIT-AP Events | Stay Updated",
     description: "Your automated board for every upcoming campus event at VIT-AP.",
+    images: ["https://events.pranjalk.tech/favicon.ico"],
   },
   robots: "index, follow",
 };
