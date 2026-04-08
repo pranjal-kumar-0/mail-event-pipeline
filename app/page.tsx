@@ -68,6 +68,7 @@ export default function EventsPage() {
 
     if (sortBy) {
       filtered.sort((a, b) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         let valA: any, valB: any;
         if (sortBy === "date") { valA = parseDate(a.date); valB = parseDate(b.date); }
         else if (sortBy === "od") { valA = a.ods_provided === "Yes" ? 1 : 0; valB = b.ods_provided === "Yes" ? 1 : 0; }
